@@ -65,10 +65,13 @@ CREATE TABLE Avis (
 );
 
 select * from Livre;
+select * from Membre;
+
+ALTER TABLE Membre
+DROP COLUMN confirmation_password;
 
 INSERT INTO Livre (photo, titre, auteur, genre, annee_publication)
 VALUES 
 ('photo1.jpg', 'livre 1', 'Auteur 1', 'Genre 1', '2020-01-01'),
 ('photo2.jpg', 'livre 2', 'Auteur 2', 'Genre 2', '2018-01-01'),
 ('photo3.jpg', 'livre 3', 'Auteur 3', 'Genre 3', '2015-01-01');
-
